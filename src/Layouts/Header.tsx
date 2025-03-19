@@ -108,10 +108,14 @@ const Header = () => {
                     <div ref={userCard} className="">
                         <ul className="flex lg:justify-center justify-end items-end lg:gap-10 gap-[22px] cursor-pointer">
                             <li>
-                                <img src={cart} alt="cart" />
+                                <Link to="my-cart">
+                                    <img src={cart} alt="cart" />
+                                </Link>
                             </li>
                             <li>
-                                <img src={Wishlist} alt="Wishlist" />
+                                <Link to="my-wishlist">
+                                    <img src={Wishlist} alt="Wishlist" />
+                                </Link>
                             </li>
                             <li>
                                 <Link to="my-account">
