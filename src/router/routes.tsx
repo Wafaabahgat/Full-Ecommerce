@@ -9,7 +9,7 @@ const NotFound = lazy(() => import('@/pages/NotFound.page'));
 const Cart = lazy(() => import('@/pages/Cart.page'));
 const Wishlist = lazy(() => import('@/pages/Wishlist.page'));
 const ContactUs = lazy(() => import('@/pages/ContactUs.page'));
-const AboutUs = lazy(() => import('@/pages/AboutUs.page'));
+const About = lazy(() => import('@/pages/About'));
 
 const routes = [
     {
@@ -17,6 +17,7 @@ const routes = [
         element: <DefaultLayout />,
         children: [
             { index: true, element: <Home /> },
+            { path: '/about-us', element: <About /> },
             { path: '/register', element: <SignUpForm /> },
             { path: '/login', element: <Login /> },
             { path: '/my-account', element: <Profile /> },
@@ -24,7 +25,6 @@ const routes = [
             { path: '/not-found', element: <NotFound /> },
             { path: '/my-cart', element: <Cart /> },
             { path: '/my-wishlist', element: <Wishlist /> },
-            { path: '/about-us', element: <AboutUs /> },
         ],
     },
 ];
