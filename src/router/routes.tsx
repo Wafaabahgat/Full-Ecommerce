@@ -10,6 +10,7 @@ const Cart = lazy(() => import('@/pages/Cart.page'));
 const Wishlist = lazy(() => import('@/pages/Wishlist.page'));
 const ContactUs = lazy(() => import('@/pages/ContactUs.page'));
 const About = lazy(() => import('@/pages/About'));
+const CheckOut = lazy(() => import('@/pages/CheckOut'));
 
 const routes = [
     {
@@ -25,6 +26,7 @@ const routes = [
             { path: '/not-found', element: <NotFound /> },
             { path: '/my-cart', element: <Cart /> },
             { path: '/my-wishlist', element: <Wishlist /> },
+            { path: '/checkout', element: <CheckOut /> },
         ],
     },
 ];

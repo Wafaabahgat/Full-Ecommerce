@@ -3,7 +3,7 @@ import React from 'react';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     type: string;
-    placeholder: string;
+    placeholder?: string;
     error?: string;
     className?: string;
     icon?: React.ReactNode;
