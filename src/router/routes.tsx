@@ -11,6 +11,7 @@ const Wishlist = lazy(() => import('@/pages/Wishlist.page'));
 const ContactUs = lazy(() => import('@/pages/ContactUs.page'));
 const About = lazy(() => import('@/pages/About'));
 const CheckOut = lazy(() => import('@/pages/CheckOut'));
+const ProductDetails = lazy(() => import('@/pages/ProductDetails.page'));
 
 const routes = [
     {
@@ -27,6 +28,7 @@ const routes = [
             { path: '/my-cart', element: <Cart /> },
             { path: '/my-wishlist', element: <Wishlist /> },
             { path: '/checkout', element: <CheckOut /> },
+            { path: '/product-details', element: <ProductDetails /> },
         ],
     },
 ];

@@ -2,6 +2,7 @@ import React from 'react';
 import cart from '@/assets/svg/Cart.svg';
 import { MdOutlineStarOutline } from 'react-icons/md';
 import { FaTrash } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export interface Item {
     id: number;
@@ -44,11 +45,13 @@ const WishlistCard: React.FC<WishlistCardProps> = ({ item, onDelete }) => {
             )}
 
             {/* Product Image */}
-            <img
-                src={item.image}
-                alt={item.name}
-                className="h-40 object-contain mb-4 lg:w-[160px] w-[120px] text-center mx-auto"
-            />
+            <Link to="/product-details">
+                <img
+                    src={item.image}
+                    alt={item.name}
+                    className="h-40 object-contain mb-4 lg:w-[160px] w-[120px] text-center mx-auto"
+                />
+            </Link>
 
             {/* Add to Cart Button */}
             <button className="w-full py-2 bg-black text-white rounded-md flex items-center justify-center">
