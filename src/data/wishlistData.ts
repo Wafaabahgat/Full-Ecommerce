@@ -11,24 +11,28 @@ export const wishlistItems = [
         originalPrice: 1160,
         image: bag,
         discount: 35,
+        isDeletable: true,
     },
     {
         id: 2,
         name: 'RGB liquid CPU Cooler',
         price: 1960,
         image: jacket,
+        isDeletable: true,
     },
     {
         id: 3,
         name: 'GP11 Shooter USB Gamepad',
         price: 550,
         image: playStation,
+        isDeletable: true,
     },
     {
         id: 4,
         name: 'Quilted Satin Jacket',
         price: 750,
         image: radio,
+        isDeletable: true,
     },
 ];
 
