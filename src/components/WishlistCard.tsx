@@ -24,21 +24,19 @@ interface WishlistCardProps {
 const WishlistCard: React.FC<WishlistCardProps> = ({ item, onDelete }) => {
     return (
         <div className="bg-white p-4 rounded-md shadow-md relative">
-            {item.isDeletable && onDelete && (
+            {item.isDeletable && (
                 <button
-                    onClick={() => onDelete(item.id)}
+                    // onClick={() => onDelete(item.id)}
                     className="absolute top-2 right-2 text-gray-500 hover:text-red-500 transition-colors"
                 >
                     <FaTrash className="w-5 h-5" />
                 </button>
             )}
 
-            {/* Badge: New (يظهر فقط إذا كان العنصر جديدًا) */}
             {item.isNew && (
                 <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded">New</span>
             )}
 
-            {/* Badge: Discount (يظهر فقط إذا كان هناك خصم) */}
             {item.discount && (
                 <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
                     -{item.discount}%
