@@ -1,15 +1,17 @@
-import { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-
+import { store } from "@/store/store";
+import { RouterProvider } from "react-router-dom";
 // Tailwind css
 import './tailwind.css';
 
 // Router
-import { RouterProvider } from 'react-router-dom';
 import router from './router';
+import { Provider } from 'react-redux';
+import { Toaster } from 'react-hot-toast';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <Suspense>
-        <RouterProvider router={router} />
-    </Suspense>,
+    <Provider store={store}>
+    <RouterProvider router={router} />
+    <Toaster position="top-center" />
+  </Provider>
 );

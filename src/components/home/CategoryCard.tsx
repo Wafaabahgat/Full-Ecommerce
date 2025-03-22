@@ -1,13 +1,25 @@
 import { useState } from 'react';
-import { categories } from '@/data/glabalData';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { IconArrowLeft, IconArrowRight } from '../icons/MainIcons';
+import { fetchCategories } from '@/slices/categories/categoryAction';
+import useGet from '@/hooks/useGet';
 
 const CategoryCard = () => {
-    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
+
+    const { data: categories, loading } = useGet({
+        states: 'categories',
+        allData: fetchCategories,
+    });
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    console.log('object', categories);
 
     return (
         <div className="">
@@ -69,7 +81,7 @@ const CategoryCard = () => {
                                     }`}
                                     onClick={() => setSelectedCategory(index)}
                                 >
-                                    <span className="text-3xl">{category.icon}</span>
+                                    {/* <span className="text-3xl">{category.url}</span> */}
                                     <h3 className="lg:text-[18px] md:text-[16px] text-[14px] font-semibold lg:mt-5 md:mt-4 mt-3">
                                         {category.name}
                                     </h3>
