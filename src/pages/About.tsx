@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AbotHero from '@/components/about/AboutHero';
 import Stats from '@/components/about/Stats';
 import Team from '@/components/about/Team';
-import Service from '@/components/about/Service';
+import Service from '@/components/shared/Service';
 
 const About = () => {
     return (

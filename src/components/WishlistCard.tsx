@@ -3,7 +3,8 @@ import cart from '@/assets/svg/Cart.svg';
 import { MdOutlineStarOutline } from 'react-icons/md';
 import { FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
+import Wishlist from '@/assets/svg/Wishlist.svg';
+import { IoEyeOutline } from 'react-icons/io5';
 export interface Item {
     id: number;
     name: string;
@@ -15,6 +16,8 @@ export interface Item {
     reviews?: number;
     isDeletable?: boolean;
     isNew?: boolean;
+    isFavourite?: boolean;
+    seeDetails?: boolean;
 }
 
 interface WishlistCardProps {
@@ -36,6 +39,17 @@ const WishlistCard: React.FC<WishlistCardProps> = ({ item, onDelete }) => {
 
             {item.isNew && (
                 <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded">New</span>
+            )}
+
+            {item.isFavourite && (
+                <span className="absolute top-2 right-2">
+                    <img src={Wishlist} alt="Wishlist" className="md:w-7 w-6 md:h-7 h-6" />
+                </span>
+            )}
+            {item.seeDetails && (
+                <span className="absolute top-11 right-3 text-[21px]">
+                    <IoEyeOutline />
+                </span>
             )}
 
             {item.discount && (

@@ -74,7 +74,7 @@ const Header = () => {
                 <div className="mainContainer lg:px-8 px-5 pb-4 lg:pt-[30px] pt-[20px] flex items-center justify-between gap-3 text-black">
                     <div className="flex items-center gap-2">
                         {/* Logo Section */}
-                        <Link to="/" className="text-[24px] font-bold">
+                        <Link to="/" className="lg:text-[24px] md:text-[22px] sm:text-[20px] text-[18px] font-bold">
                             Exclusive
                         </Link>
                     </div>
@@ -109,17 +109,17 @@ const Header = () => {
                         <ul className="flex lg:justify-center justify-end items-end lg:gap-10 gap-[22px] cursor-pointer">
                             <li>
                                 <Link to="my-cart">
-                                    <img src={cart} alt="cart" />
+                                    <img src={cart} alt="cart" className='md:w-8 w-6 md:h-8 h-6'/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="my-wishlist">
-                                    <img src={Wishlist} alt="Wishlist" />
+                                    <img src={Wishlist} alt="Wishlist" className='md:w-8 w-6 md:h-8 h-6'/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="my-account">
-                                    <IconUser className="" />
+                                    <IconUser className='md:w-8 w-6 md:h-8 h-6'/>
                                 </Link>
                             </li>
                         </ul>

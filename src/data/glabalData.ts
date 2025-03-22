@@ -14,3 +14,15 @@ export const deliveryData = [
     },
 ];
 
+export const categories = [
+    { name: "Women's Fashion", icon: '👗' },
+    { name: "Men's Fashion", icon: '👔' },
+    { name: 'Electronics', icon: '📱' },
+    { name: 'Home & Lifestyle', icon: '🏠' },
+    { name: 'Medicine', icon: '💊' },
+    { name: 'Sports & Outdoor', icon: '🏀' },
+    { name: "Baby's & Toys", icon: '🧸' },
+    { name: 'Groceries & Pets', icon: '🛒' },
+    { name: 'Health & Beauty', icon: '💄' },
+];
+
