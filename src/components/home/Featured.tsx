@@ -1,4 +1,3 @@
-import React from 'react';
 import img1 from '@/assets/images/homeImg (1).png';
 import img2 from '@/assets/images/homeimg.png';
 import img3 from '@/assets/images/homeImg (2).png';
@@ -22,17 +21,21 @@ const Featured = () => {
             {/*  Items Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-8 gap-4 mt-10">
                 <div className="w-full">
-                    <img src={img1} alt="" className="lg:max-h-[577px] md:max-h-[540px] max-h-[460px] w-full h-full element bg-cover" />
+                    <img
+                        src={img1}
+                        alt=""
+                        className="lg:max-h-[577px] md:max-h-[540px] max-h-[460px] w-full h-full element bg-cover"
+                    />
                 </div>
                 <div className="flex flex-col gap-2">
                     <div className="w-full">
                         <img src={img2} alt="" className="max-h-[284px] w-full h-full" />
                     </div>
                     <div className="flex xl:gap-8 gap-4 w-full">
-                        <div className='w-full'>
+                        <div className="w-full">
                             <img src={img3} alt="" className="max-h-[284px] w-full h-full bg-cover" />
                         </div>
-                        <div className='w-full'>
+                        <div className="w-full">
                             <img src={img4} alt="" className="max-h-[284px] w-full h-full bg-cover" />
                         </div>
                     </div>

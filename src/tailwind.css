@@ -88,9 +88,44 @@
     background-color: #2e77bf;
 }
 
-.aspect{
+/*  */
+.custom-next,
+.custom-prev {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    @apply md:w-[40px] w-[30px] md:h-[40px] h-[30px];
+}
+
+.custom-next:hover,
+.custom-prev:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.custom-next span,
+.custom-prev span {
+    font-size: 20px;
+    color: #333;
+}
+
+.custom-next {
+    right: 0px;
+    top: 15px;
+}
+
+.custom-prev {
+    top: 15px;
+    @apply md:right-[50px] right-[40px];
+}
+
+.aspect {
     aspect-ratio: 6 / 3;
 }
 .element {
     aspect-ratio: 19 / 20;
-  }
+}
+

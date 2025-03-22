@@ -1,32 +1,3 @@
-export const IconArrowLeft = ({ className }: { className?: string }) => {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            className={className}
-            viewBox="0 0 32 32"
-            fill="none"
-        >
-            <path
-                d="M12.7603 7.9066L4.66699 15.9999L12.7603 24.0933"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-            <path
-                d="M27.3345 16L4.89453 16"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-        </svg>
-    );
-};
 export const IconArrowLeftTop = ({ color = '#C0C0C0' }: { color?: string }) => {
     return (
         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,6 +110,64 @@ export const IconSms = ({ color = '#C0C0C0', className }: { color?: string; clas
 };
 
 //
+export const IconArrowRight = ({ className }: { className?: string }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            className={className}
+            viewBox="0 0 32 32"
+            fill="none"
+        >
+            <path
+                d="M19.2397 7.9066L27.333 15.9999L19.2397 24.0933"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M4.66553 16L27.1055 16"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+};
+export const IconArrowLeft = ({ className }: { className?: string }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            className={className}
+            viewBox="0 0 32 32"
+            fill="none"
+        >
+            <path
+                d="M12.7603 7.9066L4.66699 15.9999L12.7603 24.0933"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M27.3345 16L4.89453 16"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+};
 export const IconFillSms = ({ color = 'white', className }: { color?: string; className?: string }) => {
     return (
         <svg
