@@ -13,13 +13,14 @@ const CategoryCard = () => {
     const { data: categories, loading } = useGet({
         states: 'categories',
         allData: fetchCategories,
+        limit: 2,
     });
 
     if (loading) {
         return <div>Loading...</div>;
     }
 
-    console.log('object', categories);
+    // console.log('object', categories);
 
     return (
         <div className="">
