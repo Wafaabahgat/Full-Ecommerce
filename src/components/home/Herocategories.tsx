@@ -1,23 +1,10 @@
 import React, { useState } from 'react';
-// import { categories } from '@/data/glabalData';
+import { categories } from '@/data/glabalData';
 import { Link } from 'react-router-dom';
-import { fetchCategories } from '@/slices/categories/categoryAction';
-import useGet from '@/hooks/useGet';
 
 const Herocategories = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const { data: categories, loading } = useGet({
-        states: 'categories',
-        allData: fetchCategories,
-        limit: 1,
-    });
-
-    if (loading) {
-        return <div>Loading...</div>;
-    }
-
-    // console.log('object', categories);
     return (
         <div className="">
             <div className="hidden lg:flex lg:flex-col gap-4">
@@ -74,4 +61,3 @@ const Herocategories = () => {
 };
 
 export default Herocategories;
-
