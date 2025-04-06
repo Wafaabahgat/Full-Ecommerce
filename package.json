@@ -1,5 +1,5 @@
 {
-    "name": "ftzr",
+    "name": "e-commerce",
     "private": true,
     "version": "0.2.3-beta",
     "type": "module",
@@ -60,3 +60,4 @@
         "webpack": "^5.95.0"
     }
 }
+
