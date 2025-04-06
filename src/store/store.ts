@@ -1,4 +1,4 @@
-import categories from '@/slices/categories/Categories';
+import categories from '../slices/categories/Categories';
 import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
