@@ -1,9 +1,9 @@
-import categories from '../slices/categories/Categories';
+import  fetchCategories  from './../slices/categories/fetchCategories';
 import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
     reducer: {
-        categories: categories,
+        categories: fetchCategories,
     },
 });
 

@@ -13,7 +13,7 @@ const initialState: CategoryState = {
     error: null,
 };
 
-const categoriesSlice = createSlice({
+const fetchCategoriesSlice = createSlice({
     name: 'categories',
     initialState,
     reducers: {},
@@ -34,4 +34,4 @@ const categoriesSlice = createSlice({
     },
 });
 
-export default categoriesSlice.reducer;
+export default fetchCategoriesSlice.reducer;
